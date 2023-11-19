@@ -157,6 +157,7 @@ void levelOrderTraverse(BiTree T) {
 	q.push(T);
 	while (!q.empty()) {
 		BiTree node = q.front();
+		q.pop();
 		printf("%d\n", node->data);
 		
 		if (node->lchild != nullptr) {
