@@ -5,11 +5,19 @@ using namespace std;
 
 typedef int T;
 
+typedef enum {
+	LINK,
+	THREAD
+} PointerTag;
+
 // 二叉树结构体（链式）
 typedef struct BiTNode {
 	T data;
 	struct BiTNode* lchild, * rchild;
+	PointerTag ltag, rtag;
 } BiTNode_t, * BiTree;
+
+BiTNode_t* pre = nullptr; // 始终指向前驱结点
 
 // 建立二叉树
 BiTree buildTree(char arr[], int index, int len) {
@@ -130,6 +138,7 @@ void PostOrderTraverse(BiTree node) {
 	}
 
 	while (!s.empty()) {
+		BiTree t = s.top();
 		if (node->rchild == nullptr || node->rchild == lastVisit) {
 			printf("%d\n", node->data);
 			lastVisit = node;
@@ -168,6 +177,31 @@ void levelOrderTraverse(BiTree T) {
 			q.push(node->rchild);
 		}
 	}
+}
+
+// 中序线索化
+void InOrderThreading(BiTNode_t *node) {
+	if (node == nullptr) {
+		return;
+	}
+
+	InOrderThreading(node->lchild);
+	// 中序线索化
+
+	if (node->lchild == nullptr) {
+		node->ltag = THREAD;
+		node->lchild = pre;
+	}
+
+
+	if (pre != nullptr && pre->rchild == nullptr) {
+		pre->rtag = THREAD;
+		pre->rchild = node;
+	}
+	pre = node;
+
+
+	InOrderThreading(node->rchild);
 }
 
 int main()
