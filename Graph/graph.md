@@ -8,11 +8,11 @@
 
 无向图
 
-![无向图](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105111136297.png)
+![无向图](./graph/image-20220105111136297.png)
 
 有向图
 
-![有向图](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105111207791.png)
+![有向图](./graph/image-20220105111207791.png)
 
 
 
@@ -70,7 +70,7 @@ $$
 
 它含有图中全部的n个结点，但是只有构成树的n-1条边  
 
-![连通图的生成树](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20231222200948001.png)
+![连通图的生成树](./graph/image-20231222200948001.png)
 
 ### 7、稠密图和稀疏图
 
@@ -126,7 +126,7 @@ $$
 
 #### 1、邻接矩阵
 
-​	![邻接矩阵](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105133802949.png)
+​	![邻接矩阵](./graph/image-20220105133802949.png)
 
 代码：
 
@@ -190,7 +190,7 @@ void createGraph(AdjMatrix* G)
 
 #### 2、邻接表和逆邻接表
 
-![邻接表和逆邻接表](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105134312873.png)
+![邻接表和逆邻接表](./graph/image-20220105134312873.png)
 
 代码：
 
@@ -261,7 +261,7 @@ void createGraph(Graph* G)
 
 #### 3、十字链表
 
-![十字链表](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105150411333.png)
+![十字链表](./graph/image-20220105150411333.png)
 
 代码：
 
@@ -358,7 +358,7 @@ int Locate(Graph* G, int v)
 
 <u>**注：邻接多重表主要针对无向图**</u>
 
-![邻接多重表](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105151708393.png)
+![邻接多重表](./graph/image-20220105151708393.png)
 
 代码：
 
@@ -438,7 +438,7 @@ int Locate(Graph* G, int v)
 
 #### 2、边集数组
 
-![边集数组](C:\Users\Jvle\AppData\Roaming\Typora\typora-user-images\image-20220105152740127.png)
+![边集数组](./graph/image-20220105152740127.png)
 
 **注：这里不再写代码，因为太简单了，弄清结构了就可以用**
 
