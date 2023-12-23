@@ -221,7 +221,7 @@ int main()
 
 ### 1、冒泡排序
 
-![冒泡排序](./find and sort/5.gif)
+![冒泡排序](./find_and_sort/5.gif)
 
 代码：
 
