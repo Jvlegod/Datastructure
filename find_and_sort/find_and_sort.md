@@ -125,7 +125,8 @@ int InsertionSearch(T *a, T value, int low, int high)
 $$
 F[k] = F[k - 1] + F[k - 2]
 $$
-![斐波那契序列](./find_and_sort/1.png)
+
+![](./find_and_sort/1.png)
 
 除了第一个元素和第二个元素的比值为1以外，后面的元素前一个和后一个的比值随着斐波那契数越大逐渐接近0.618
 
