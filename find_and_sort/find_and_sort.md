@@ -89,7 +89,7 @@ int Binary_Search(T *a, int n, T key) {
 
 二分查找中：
 $$
-mid = (high - low) / 2
+mid=(high-low)/2
 $$
 
 $$
