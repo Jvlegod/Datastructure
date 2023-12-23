@@ -87,9 +87,10 @@ int Binary_Search(T *a, int n, T key) {
 
 插值查找本质上是对二分查找的改进：
 
-二分查找中：
+二分查找中:
+
 $$
-mid=(high-low)/2
+mid = (high - low) / 2
 $$
 
 $$
@@ -97,6 +98,7 @@ $$
 $$
 
 插值查找就是对其中的1/2进行了改进替换为了
+
 $$
 mid = low + \frac{key - a[low]}{a[high] - a[low]} \times (high - low)
 $$
@@ -122,6 +124,7 @@ int InsertionSearch(T *a, T value, int low, int high)
 本质上也是对二分查找的一种优化。
 
 下面为一个斐波那契序列：
+
 $$
 F[k] = F[k - 1] + F[k - 2]
 $$
