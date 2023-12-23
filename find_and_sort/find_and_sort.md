@@ -125,11 +125,11 @@ int InsertionSearch(T *a, T value, int low, int high)
 $$
 F[k] = F[k - 1] + F[k - 2]
 $$
-![斐波那契序列](./find and sort/1.png)
+![斐波那契序列](./find_and_sort/1.png)
 
 除了第一个元素和第二个元素的比值为1以外，后面的元素前一个和后一个的比值随着斐波那契数越大逐渐接近0.618
 
-![](./find and sort/2.png)
+![](./find_and_sort/2.png)
 
 和二分查找相比，mid的选择是这样的，如图
 
@@ -217,7 +217,7 @@ int main()
 
 3. [动画阐释各种排序算法（之前误删了大家也不用再点赞投币了）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1CY4y1t7TZ/?spm_id_from=333.337.search-card.all.click&vd_source=4e0d0cb650fa7f0cb4ae8b51d183d2e2)
 
-![](./find and sort/3.png)
+![](./find_and_sort/3.png)
 
 ### 1、冒泡排序
 
@@ -249,7 +249,7 @@ void BubbleSort(int* arr, int size)//冒泡排序
 
 ### 2、插入排序
 
-![冒泡排序](./find and sort/4.gif)
+![冒泡排序](./find_and_sort/4.gif)
 
 代码：
 
@@ -281,7 +281,7 @@ void InsertSort(int* arr, int size)//直接插入排序
 
 ### 3、选择排序
 
-![选择排序](./find and sort/7.gif)
+![选择排序](./find_and_sort/7.gif)
 
 代码：
 
@@ -319,7 +319,7 @@ void SelectSort(int* arr, int size)//优化选择排序
 
 ### 4、希尔排序
 
-![希尔排序](./find and sort/8.png)
+![希尔排序](./find_and_sort/8.png)
 
 - 当gap越大，预排序越快，但是越不接近有序
 - 当gap越小，数据处理越慢，越接近有序
@@ -361,7 +361,7 @@ void ShellSort(int* arr, int size)//希尔排序
 
 ### 5、快速排序
 
-![快速排序](./find and sort/6.gif)
+![快速排序](./find_and_sort/6.gif)
 
 代码：
 
@@ -383,7 +383,7 @@ void quick_sort(int q[], int l, int r)
 
 ### 6、归并排序
 
-![快速排序](./find and sort/9.gif)
+![快速排序](./find_and_sort/9.gif)
 
 代码：
 
