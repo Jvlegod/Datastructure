@@ -1,4 +1,4 @@
-![image](https://github.com/Jvlegod/Datastructure/assets/93458802/d0011b48-9726-478d-975b-93575daf2d6e)# 图
+# 图
 
 ## 一、图的相关概念
 
@@ -947,18 +947,31 @@ int search_subscript(Graph* G, int index)
 
 步骤：
 原图
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/05c90e6a-82b4-48bf-bd8b-3db78c4b48ff)
+
 第一步：在图中找出最小的边权，并加入最小生成树行列
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/10be73e4-61ba-4e3b-b1b3-9d7291960bfa)
+
 第二步：寻找下一个最小的边权，继续加入最小生成树行列
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/8a09cc9f-e3e1-4521-8f0e-223d37afbeaa)
+
 继续，到此为止，下一步将加入的边为(6-8)，但是加入之后会形成环，因此我们选择舍弃它，继续加入下一个(2-3)
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/e33914c7-5379-489c-8e1e-6f25fd236883)
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/96ad907b-de9e-47cb-8616-9850d3fe4934)
+
 加入(2-3)则形成如图
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/afb84e8c-54cc-4512-816c-726f1fead28a)
+
 重复以上过程，直到形成最小生成树为止
+
 ![image](https://github.com/Jvlegod/Datastructure/assets/93458802/f242b6ac-9780-4d7b-bbaa-ad04572a1377)
+
 红色的路径构成了最小生成树
 
 代码:
