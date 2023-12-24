@@ -1226,7 +1226,7 @@ void Prim(AdjMatrix G)
 ## 五、最短路径
 
 ### 	1、迪杰斯特拉(Dijkstra)
-
+[最短路径查找—Dijkstra算法](https://www.bilibili.com/video/BV1zz4y1m7Nq/?spm_id_from=333.337.search-card.all.click)
 代码:
 
 ```cpp
