@@ -27,17 +27,21 @@
 ​	图中任意两个顶点之间都存在一条边能互相到达，即有(v~i~, v~j~)
 
 ​	特点：
+
 $$
 Edge = n(n - 1) / 2
 $$
+
 有向完全图：
 
 ​	图中任意两个顶点之间都存在<v~i~, v~j~>和<v~j~, v~i~>
 
 ​	特点：
+
 $$
 Edge = n(n - 1)
 $$
+
 混合图：既包含有向边也包含无向边，自研概念，也无需研究，目前没有应用。
 
 ### 3、子图
@@ -647,7 +651,7 @@ int search(Graph* G, int data)
 
 ### 2、广度优先搜索(BFS)
 
-​		**BFS，其英文全称是Breadth First Search。**广度优先搜索算法具有完全性。这意指无论图形的种类如何，只要目标存在，则BFS一定会找到。然而，若目标不存在，且图为无限大，则BFS将不收敛（不会结束）。
+​		**BFS，其英文全称是Breadth First Search**，广度优先搜索算法具有完全性。这意指无论图形的种类如何，只要目标存在，则BFS一定会找到。然而，若目标不存在，且图为无限大，则BFS将不收敛（不会结束）。
 
 ​		适用条件：1、求离根最近的解；2、求最优解
 
@@ -934,8 +938,41 @@ int search_subscript(Graph* G, int index)
 ```
 
 ## 四、最小生成树
-
+最小生成树这里推荐一个视频，讲解的比较好：
+[最小生成树(Kruskal(克鲁斯卡尔)和Prim(普里姆))算法动画演示](https://www.bilibili.com/video/BV1Eb41177d1/?spm_id_from=333.337.search-card.all.click&vd_source=4e0d0cb650fa7f0cb4ae8b51d183d2e2)
 ### 1、克鲁斯卡尔(Kruskal)
+克鲁斯卡尔的算法思想：
+1. 将图中所有边按照权值大小排序
+2. 依次将边按照不形成环的方式加入到最小生成树的行列当中，若形成环，则将形成环的边丢弃
+
+步骤：
+原图
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/05c90e6a-82b4-48bf-bd8b-3db78c4b48ff)
+
+第一步：在图中找出最小的边权，并加入最小生成树行列
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/10be73e4-61ba-4e3b-b1b3-9d7291960bfa)
+
+第二步：寻找下一个最小的边权，继续加入最小生成树行列
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/8a09cc9f-e3e1-4521-8f0e-223d37afbeaa)
+
+继续，到此为止，下一步将加入的边为(6-8)，但是加入之后会形成环，因此我们选择舍弃它，继续加入下一个(2-3)
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/e33914c7-5379-489c-8e1e-6f25fd236883)
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/96ad907b-de9e-47cb-8616-9850d3fe4934)
+
+加入(2-3)则形成如图
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/afb84e8c-54cc-4512-816c-726f1fead28a)
+
+重复以上过程，直到形成最小生成树为止
+
+![image](https://github.com/Jvlegod/Datastructure/assets/93458802/f242b6ac-9780-4d7b-bbaa-ad04572a1377)
+
+红色的路径构成了最小生成树
 
 代码:
 
@@ -1189,6 +1226,7 @@ void Prim(AdjMatrix G)
 ## 五、最短路径
 
 ### 	1、迪杰斯特拉(Dijkstra)
+[最短路径查找—Dijkstra算法](https://www.bilibili.com/video/BV1zz4y1m7Nq/?spm_id_from=333.337.search-card.all.click)
 
 代码:
 
